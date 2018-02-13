@@ -40,13 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Question 2 - Law Of Demeter.cs" />
-    <Compile Include="Question 1 - Law Of Demeter.cs" />
+    <Compile Include="Question 10 - Lazy Loading.cs" />
+    <Compile Include="Question 12 - SOLID Principles.cs" />
+    <Compile Include="Question 11 - SOLID Principles.cs" />
+    <Compile Include="Question 02 - Law Of Demeter.cs" />
+    <Compile Include="Question 01 - Law Of Demeter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Question 5 - LINQ.cs" />
-    <Compile Include="Question 4 - Refactoring.cs" />
-    <Compile Include="Question 3 - Refactoring.cs" />
-    <Compile Include="Question 6 - Unit Tests.cs" />
+    <Compile Include="Question 05 - LINQ.cs" />
+    <Compile Include="Question 04 - Refactoring.cs" />
+    <Compile Include="Question 03 - Refactoring.cs" />
+    <Compile Include="Question 06 - Unit Tests.cs" />
+    <Compile Include="Question 07 - Code Review.cs" />
+    <Compile Include="Question 08 - Error Prevention.cs" />
+    <Compile Include="Question 09 - Asyncronous Programming.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
