@@ -53,6 +53,7 @@
     <Compile Include="Question 07 - Code Review.cs" />
     <Compile Include="Question 08 - Error Prevention.cs" />
     <Compile Include="Question 09 - Asyncronous Programming.cs" />
+    <Compile Include="Question 13 - Big O Notation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

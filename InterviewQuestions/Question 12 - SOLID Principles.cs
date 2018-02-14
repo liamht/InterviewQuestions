@@ -11,16 +11,16 @@ namespace InterviewQuestions
     /// Following SOLID principles. Create a new ideology so that the answers to the Question13 class can be fetched from a source that is not a file.
     /// Upon completion, Change the Question13 class so that the Answers retreived are fetched from a different location to the one specified in the FileRetreivers CONST value
     /// </summary>
-    public class Question13
+    public class Question12
     {
         private List<QuestionAnswer> _answers { get; set; }
 
-        private Question13(IAnswerRetreiver retreiver)
+        private Question12(IAnswerRetreiver retreiver)
         {
             _answers = retreiver.GetAnswers();
         }
 
-        public Question13()
+        public Question12()
         {
             _answers = new FileRetreiver().GetAnswers();
         }
