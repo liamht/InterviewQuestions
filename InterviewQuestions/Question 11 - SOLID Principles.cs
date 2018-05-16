@@ -20,9 +20,10 @@ namespace InterviewQuestions
     /// </summary>
     public class Question11
     {
-        public void Process()
+        private IDatabase<IEntity> _db;
+        public void Process(IDatabase<IEntity> db)
         {
-
+            _db = db;
         }
         
         #region Set Up Classes - Please look

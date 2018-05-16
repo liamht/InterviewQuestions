@@ -22,11 +22,12 @@ namespace InterviewQuestions
     /// </summary>
     public class Question12
     {
-        public void Process()
+        private IDatabase<IEntity> _db;
+        public void Process(IDatabase<IEntity> db)
         {
-
+            _db = db;
         }
-        
+
         #region Set Up Classes - Please look
 
         public interface IDatabase<T> where T : IEntity
