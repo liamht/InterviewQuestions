@@ -21,11 +21,17 @@ namespace InterviewQuestions
     public class Question11
     {
         private IDatabase<IEntity> _db;
-        public void Process(IDatabase<IEntity> db)
+
+        public Question11(IDatabase<IEntity> db)
         {
             _db = db;
         }
-        
+
+        public void Process()
+        {
+
+        }
+
         #region Set Up Classes - Please look
 
         public interface IDatabase<T> where T : IEntity
