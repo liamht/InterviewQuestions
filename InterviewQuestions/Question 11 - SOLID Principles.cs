@@ -24,33 +24,32 @@ namespace InterviewQuestions
         {
 
         }
+        
+        #region Set Up Classes - Please look
+
+        public interface IDatabase<T> where T : IEntity
+        {
+            ISession<T> OpenSession();
+        }
+
+        public interface ISession<T> : IDisposable where T : IEntity
+        {
+            IQueryable<T> GetObjects();
+
+            void Insert(T entity);
+
+            void SaveChanges();
+        }
+
+        public interface IEntity
+        {
+            int Id { get; set; }
+
+            string Name { get; set; }
+
+            DateTimeOffset LastUpdated { get; set; }
+        }
+
+        #endregion
     }
-
-
-    #region Set Up Classes - Please look
-
-    public interface IDatabase<T> where T : IEntity
-    {
-        ISession<T> OpenSession();
-    }
-
-    public interface ISession<T> : IDisposable where T:IEntity
-    {
-        IQueryable<T> GetObjects();
-
-        void Insert(T entity);
-
-        void SaveChanges();
-    }
-
-    public interface IEntity
-    {
-        int Id { get; set; }
-
-        string Name { get; set; }
-
-        DateTimeOffset LastUpdated { get; set; }
-    }
-
-    #endregion
 }
