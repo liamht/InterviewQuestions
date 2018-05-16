@@ -7,19 +7,27 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Rewrite the GetEngineManufacturer method so that it uses the car class. In this example please ADHERE to demeters law.
-    /// You are permitted to write as many additional classes or methods as you need.
+    /// Add code into the GetEngineManufacturer method so that it gets the name of a car's engine. In this example please ADHERE to demeters law.
+    /// It is expected that the car class will have to have an engine property added to it.
     /// </summary>
     public class Question2
     {
         public string GetEngineManufacturer()
         {
-            return "Detroit Diesel";
+            // answer here
+
         }
 
         private class Car
         {
 
+        }
+
+        private class Engine
+        {
+            private string Make { get; set; }
+
+            private string Manufacturer { get; set; }
         }
     }
 }

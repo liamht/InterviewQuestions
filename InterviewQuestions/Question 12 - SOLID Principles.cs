@@ -8,54 +8,51 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Following SOLID principles. Create a new ideology so that the answers to the Question13 class can be fetched from a source that is not a file.
-    /// Upon completion, Change the Question13 class so that the Answers retreived are fetched from a different location to the one specified in the FileRetreivers CONST value
+    /// Write some theoretical code that satisfies the following user stories. Please ADHERE the solid principles as much as you possibly can.
+    /// Aim to copy your answer from question 11 as much as possible, adding comments to explain why you have made any changes when turning your non-solid code into good code. 
+    /// 
+    /// Given I am answering question 12
+    /// When I process entities
+    /// Then only items that have not been updated in the last week will be processed
+    /// 
+    /// Given I am answering question 12
+    /// When I process entities
+    /// Then items being processed will '- done' appended to the end of their name
+    /// And they will be marked as updated
     /// </summary>
     public class Question12
     {
-        private List<QuestionAnswer> _answers { get; set; }
-
-        private Question12(IAnswerRetreiver retreiver)
+        public void Process()
         {
-            _answers = retreiver.GetAnswers();
+
         }
-
-        public Question12()
-        {
-            _answers = new FileRetreiver().GetAnswers();
-        }
-
-        #region question code dependencies
-
-        private class FileRetreiver : IAnswerRetreiver
-        {
-            private const string ANSWER_FILE_LOCATION = "C:/AnswerFiles/Answers.answerfile";
-
-            public List<QuestionAnswer> GetAnswers()
-            {
-                if (File.Exists(ANSWER_FILE_LOCATION))
-                {
-                    return File.ReadAllLines(ANSWER_FILE_LOCATION).Select(val => new QuestionAnswer(val)).ToList();
-                }
-
-                throw new FileNotFoundException("Could not load file containing answers");
-            }
-        }
-
-        private interface IAnswerRetreiver
-        {
-            List<QuestionAnswer> GetAnswers();
-        }
-
-        private class QuestionAnswer
-        {
-            public string Value { get; set; }
-
-            public QuestionAnswer(string val)
-            {
-                Value = val;
-            }
-        }
-        #endregion
     }
+
+
+    #region Set Up Classes - Please look
+
+    public interface IDatabase<T> where T : IEntity
+    {
+        ISession<T> OpenSession();
+    }
+
+    public interface ISession<T> : IDisposable where T : IEntity
+    {
+        IQueryable<T> GetObjects();
+
+        void Insert(T entity);
+
+        void SaveChanges();
+    }
+
+    public interface IEntity
+    {
+        int Id { get; set; }
+
+        string Name { get; set; }
+
+        DateTimeOffset LastUpdated { get; set; }
+    }
+
+    #endregion
 }

@@ -7,9 +7,18 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Rewrite the GetIntValuesFromStrings method so that both foreach loops are no longer used.
-    /// Instead, LINQ method syntax should be used to return the first two characters of each string inside the list as integers, 
-    /// where the characters are actually representitive of numbers
+    /// Rewrite the GetIntValuesFromStrings method to make the most of LINQ. 
+    /// While method syntax is preferred, you are permitted to use query syntax.
+    /// 
+    /// The nature of the query should not change. The query adheres to the following user story.
+    /// 
+    /// Given I am processing a list of entities
+    /// When the name of the entity starts with a two digit number
+    /// Then the record will be processed
+    /// 
+    /// Given I am processing a list of entities
+    /// When the name of the entity does not start with a two digit number
+    /// Then the record will be ignored
     /// </summary>
     public class Question5
     {

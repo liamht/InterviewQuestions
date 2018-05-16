@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Refactor the code below to make it more object oriented and remove the switch statement
+    /// Refactor the code below to make it more object oriented and remove the switch statement.
+    /// The likely result of this will end up with a boolean property on the service class
+    /// 
+    /// You are permitted to write as many additional classes, methods or code as you see necessary.
     /// </summary>
     public class Question3
     {

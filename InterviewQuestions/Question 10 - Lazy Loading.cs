@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Implement lazy loading on memory heavy thing
+    /// Implement lazy loading on memory heavy thing, do not use the Lazy<IMemoryHeavyThing> class
     /// </summary>
     public class Question10
     {
@@ -18,12 +18,6 @@ namespace InterviewQuestions
         {
             
         }
-
-        public Question10(IMemoryHeavyThing thing)
-        {
-            MemoryHeavyThing = thing;
-        }
-
 
         public interface IMemoryHeavyThing
         {

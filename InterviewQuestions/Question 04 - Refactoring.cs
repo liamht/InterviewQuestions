@@ -8,6 +8,7 @@ namespace InterviewQuestions
 {
     /// <summary>
     /// Refactor the code below so that the nested if statements are reduced as much as possible.
+    /// Attempt to failfast as much as possible, so that all checks do not need to run if any validation has failed.
     /// </summary>
     public class Question4
     {

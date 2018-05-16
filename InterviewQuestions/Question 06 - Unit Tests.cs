@@ -8,6 +8,9 @@ namespace InterviewQuestions
 {
     /// <summary>
     /// Write a new unit test class (either inside this file, or in a new one) that will test the method below.
+    /// The expectation is that 2 unit tests will be written.
+    /// 
+    /// No unit test frameworks have been added, so it is up to your preference whether to use Nunit, Xunit, MSTest, or any other testing frameworks.
     /// </summary>
     public class Question6
     {
