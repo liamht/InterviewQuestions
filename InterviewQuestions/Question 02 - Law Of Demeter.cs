@@ -25,9 +25,9 @@ namespace InterviewQuestions
 
         private class Engine
         {
-            private string Make { get; set; }
+            public string Make { get; set; }
 
-            private string Manufacturer { get; set; }
+            public string Manufacturer { get; set; }
         }
     }
 }
