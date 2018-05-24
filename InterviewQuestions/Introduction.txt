@@ -1,0 +1,13 @@
+﻿Please go through every class in this solution, answering all questions as you go along.
+
+Questions are asked in code comments at the top of every class, outlining the scenarios that we would like you to cover.
+
+You are permitted to add any references from nuget or any other code sources that you see fit. Answers may add classes, methods, 
+properties or any other code that you as a candidate feel necessary.
+
+There are multiple ways of answering the vast majority of these questions, your code will be read through at the end and evaluated against 
+how you went about answering these questions just as much as whether the code would do what the question asks.
+
+You are permitted to use google, or any other internet resource you see fit in this answer. However this should be used as a reference for things that you have forgotten about, instead 
+of learning new technology. If you do not understand a question, there will not be a penalty for skipping it.
+As an example of this, please do not google 'What is demeters law' or 'what are the solid principles'

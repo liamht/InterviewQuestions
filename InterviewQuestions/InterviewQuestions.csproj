@@ -57,6 +57,9 @@
     <Compile Include="Question 14 - Sorting.cs" />
     <Compile Include="Question 15 - Logic Puzzles.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Introduction.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
