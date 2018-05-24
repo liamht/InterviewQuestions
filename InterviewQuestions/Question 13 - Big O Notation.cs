@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace InterviewQuestions
 {
     /// <summary>
-    /// Write some code that could be described in Big O notation as O(n^3)
+    /// Write some code that could be described in Big O notation as O(n^2)
     /// </summary>
     public class Question13
     {
