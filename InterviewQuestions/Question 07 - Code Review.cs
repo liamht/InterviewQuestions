@@ -1,5 +1,6 @@
 ﻿//Question 7 - Code review the code below. Write any comments / suggestions in code comments next to the affected line.
-// if you feel like your comment can be backed up with evidence: eg 'this breaks the open closed principle' - please point to any evidence via blogposts etc
+// if you feel like your comment can be backed up with evidence: eg 'this breaks the open closed principle' - please point to any evidence via MSDN, 
+// blogposts etc
 
 
 //Start code review HERE.
